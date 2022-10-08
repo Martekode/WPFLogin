@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\19fa9c7f88e115026eaec7105573ed7f.jpg" />
+    <None Remove="Images\rider_logo_300x300.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\19fa9c7f88e115026eaec7105573ed7f.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Model\" />
+    <Folder Include="Viewmodel\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Images\rider_logo_300x300.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>
